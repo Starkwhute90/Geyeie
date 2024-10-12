@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+</head>
+<body>
+
+    <div id="flipbook">
+        <div class="page" data-page-number="1">Page 1</div>
+        <div class="page" data-page-number="2">Page 2</div>
+        <div class="page" data-page-number="3">Page 3</div>
+        <div class="page" data-page-number="4">Page 4</div>
+        <div class="page" data-page-number="5">Page 5</div>
+        <div class="page" data-page-number="6">Page 6</div>
+        <div class="page" data-page-number="7">Page 7</div>
+        <div class="page" data-page-number="8">Page 8</div>
+        <div class="page" data-page-number="9">Page 9</div>
+        <div class="page" data-page-number="10">Page 10</div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#flipbook').turn({
+                width: 800,
+                height: 600,
+                autoCenter: true
+            });
+        });
+    </script>
+
+</body>
+</html>￼Enter
